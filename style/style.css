@@ -1,0 +1,168 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(226, 27%, 90%);
+}
+
+:root {
+--Violet: hsl(257, 40%, 49%);
+--Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--Violet);
+  background-image: url("../images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  padding: 2rem 4rem;
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+}
+
+.logo img{
+  width: 170px;
+}
+
+.main-content {
+  display: flex;
+  margin-top: 4rem;
+  gap: 3rem;
+}
+
+.main-content img {
+  width: 100%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+}
+
+.text h1 {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+
+.text p {
+  margin-top: 1rem;
+  color: rgb(221, 221, 208);
+  line-height: 1.6;
+}
+
+.btn {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  padding: 15px;
+  width: 180px;
+  border-radius: 50px;
+  border: none;
+  color: var(--Violet);
+  transition: all .3s ease;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--Soft-Magenta);
+  color: #fff;
+}
+
+.social-media {
+  font-size: .9rem;
+  display: flex;
+  position: absolute;
+  right: 70px;
+  color: #fff;
+}
+
+.social-media i {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-left: 1rem;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s ease;
+}
+.social-media i:hover {
+  cursor: pointer;
+  color: var(--Soft-Magenta);
+  border-color: var(--Soft-Magenta);
+}
+
+@media (min-width: 769px) {
+  body {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+  .main-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .container {
+    width: 100%;
+    padding: 2rem;
+  }
+  .logo img {
+    width: 8rem;
+  }
+  .main-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .main-content img {
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .text h1 {
+    font-size: 1.5rem;
+    max-width: 300px;
+  }
+  .text p {
+    font-size: 1rem;
+    max-width: 350px;
+  }
+  .btn {
+    margin-top: 2rem;
+    width: 250px;
+  }
+  .social-media {
+    justify-content: center;
+    margin-top: 4rem;
+    position: static;
+  }
+}
